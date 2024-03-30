@@ -191,7 +191,7 @@ void OpenthermHub::process_response(unsigned long response, OpenThermResponseSta
             TAG, 
             "Received invalid OpenTherm response: %s, status=%s", 
             String(response, HEX).c_str(),
-            String(ot->getLastResponseStatus()).c_str()
+           // String(ot->getLastResponseStatus()).c_str()
         );
         return;
     }
